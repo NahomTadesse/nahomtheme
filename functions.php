@@ -159,3 +159,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function load_stylesheets(){
+
+	if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
+        wp_enqueue_style( 'wp-bootstrap-starter-bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css' );
+        wp_enqueue_style( 'wp-bootstrap-starter-fontawesome-cdn', 'https://use.fontawesome.com/releases/v5.10.2/css/all.css' );
+    } else {
+        wp_enqueue_style( 'wp-bootstrap-starter-bootstrap-css', get_template_directory_uri() . 'bootstrap-4.4.1-dist/css/bootstrap.min.css' );
+       // wp_enqueue_style( 'wp-bootstrap-starter-fontawesome-cdn', get_template_directory_uri() . '/css/fontawesome.min.css' );
+    }
+	
+	/*wp_register_style( 'boot', get_template_directory_uri() . 'css/bootstarp.min.css', array() ,1 , 'all' );
+	wp_enqueue_style('boot');*/
+
+}
