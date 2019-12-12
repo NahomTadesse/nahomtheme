@@ -45,9 +45,14 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nahomtheme' ); ?></button>
-			<?php
+		<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+        <?php
 			wp_nav_menu( array(
 				'theme_location'    => 'primary',
 				'depth'             => 2,
@@ -57,7 +62,7 @@
 				'menu_class'        => 'nav navbar-nav',
 				'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 				'walker'            => new WP_Bootstrap_Navwalker(),
-			) );'t
+			) );
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

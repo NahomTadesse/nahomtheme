@@ -134,6 +134,13 @@ function nahomtheme_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
+function prefix_modify_nav_menu_args( $args ) {
+    return array_merge( $args, array(
+        'walker' => WP_Bootstrap_Navwalker(),
+    ) );
+}
+add_filter( 'wp_nav_menu_args', 'prefix_modify_nav_menu_args' );
 // add_action( 'wp_enqueue_scripts', 'nahomtheme_style' );
 
 
