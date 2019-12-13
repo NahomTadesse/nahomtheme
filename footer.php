@@ -35,10 +35,10 @@
     <a class="navbar-brand" href="#">
         <?php bloginfo('name'); ?>
     </a>
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'footer', 'nahomtheme' ); ?></button
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'footer menu', 'nahomtheme' ); ?></button
         <?php
             wp_nav_menu([
-            'menu'            => 'footer',
+            'menu'            => 'footer menu',
             'theme_location'  => 'menu-1',
             'container'       => 'div',
             'container_id'    => 'navbarCollapse',
@@ -47,7 +47,7 @@
             'menu_class'      => 'navbar-nav mr-auto',
             'depth'           => 0,
             'fallback_cb'     => 'functions::fallback',
-            'walker'          => new nahom_NavBar()
+            'walker'          => new nahom_NavBarFooter()
             ]);
         ?>
 
