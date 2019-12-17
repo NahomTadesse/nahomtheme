@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'nahomtheme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nahomtheme_scripts() {
-    wp_enqueue_style( "newcss", get_template_directory_uri().'/css/custom.css', array(), '1.0', 'all' );
+    wp_enqueue_style( "customcss", get_template_directory_uri().'/css/custom.css', array(), '1.0', 'all' );
 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
 
