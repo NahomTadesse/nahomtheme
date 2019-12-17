@@ -1,6 +1,12 @@
 #site-navigationf {
     padding-top: 200px;
-    /* padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px; */
+    background-image: url("../assets/images/fo.jpg") ;
+    padding-right: 50px;
+  }
+
+
+  #site-navigation {
+
+    padding-right: 50px;
+
   }
