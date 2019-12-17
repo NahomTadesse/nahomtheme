@@ -11,7 +11,7 @@
 
 ?>
 
-<nav id="site-navigation"  class="navbar navbar-expand-md navbar-dark top bg-dark">
+<nav id="site-navigationf"  class="navbar navbar-expand-md navbar-dark top bg-dark">
     <a class="navbar-brand" href="#">
         <?php bloginfo('name'); ?>
     </a>
@@ -33,7 +33,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer" >
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nahomtheme' ) ); ?>">
 				<?php
