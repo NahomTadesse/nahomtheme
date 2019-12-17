@@ -2,11 +2,20 @@
     padding-top: 200px;
     background-image: url("../assets/images/fo.jpg") ;
     padding-right: 50px;
-  }
 
+  }
+#colophon{
+
+background-color: #000000;
+padding-top: 100px;
+
+text-align: center;
+
+
+}
 
   #site-navigation {
 
-    padding-right: 50px;
+    padding-top: 60px;
 
   }
