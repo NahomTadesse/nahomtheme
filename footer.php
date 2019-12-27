@@ -32,7 +32,7 @@
         ?>
 
 	</div><!-- #content -->
-
+</div>
 	<footer id="colophon" class="site-footer" >
     <p><h3>powered By nahomtheme</h3></p>
     <br>©2019 nahomtheme </br>

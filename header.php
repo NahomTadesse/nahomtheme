@@ -44,6 +44,7 @@
             ]);
         ?>
 		</nav><!-- #site-navigation -->
+</div>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
