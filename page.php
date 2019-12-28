@@ -20,8 +20,9 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+		<div class="image"></div>
 		<?php
+ 
 		while ( have_posts() ) :
 			the_post();
 
@@ -38,10 +39,11 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	</div><!-- #primary -->
-
+	
     <div class="col-sm-4">
     <?php get_sidebar(); ?>
     </div>
   </div>
 </div>
+
 <?php get_footer(); ?>

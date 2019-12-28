@@ -57,6 +57,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
+
+	
 }
 
 /* Sections
@@ -68,6 +70,7 @@ html {
 
 body {
 	margin: 0;
+	
 }
 
 /**
@@ -395,7 +398,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #ffffff;
+	color:#111111;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -486,6 +489,7 @@ ul, ol {
 
 ul {
 	list-style: disc;
+	
 }
 
 ol {
@@ -574,7 +578,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
+	color: #fff;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
@@ -596,7 +600,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+color: #111;
 }
 
 select {
@@ -743,7 +747,7 @@ a:hover, a:active {
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
+	background-color: #fff;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
@@ -809,6 +813,7 @@ a:hover, a:active {
 	content: "";
 	display: table;
 	table-layout: fixed;
+	
 }
 
 .clear:after,
@@ -825,6 +830,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 1.5em;
+	
 	/* Make sure select elements fit in widgets. */
 }
 

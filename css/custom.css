@@ -7,7 +7,7 @@
 #colophon{
 
 background-color: #000000;
-padding-top: 100px;
+padding-bottom: -1000%;
 
 text-align: center;
 
@@ -19,9 +19,13 @@ text-align: center;
     padding-top: 60px;
 
   }
+/* #img1{
+    background-image: url("../assets/images/m.jpg") ;
+} */
+div.image{
+  content:url("../assets/images/m.jpg");
+  width: 700px;
+  height: 700px;
 
-.widget-title{
-  color: #000000;
-  
 
 }

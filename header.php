@@ -65,7 +65,8 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-  
+<!-- <div> <img src="C:\xampp\htdocs\wordpress\wp-content\themes\nahomtheme\assets\images\fo.jpg"> </div> -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
