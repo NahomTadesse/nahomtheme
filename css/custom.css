@@ -1,8 +1,8 @@
 #site-navigationf {
     padding-top: 200px;
-    background-image: url("../assets/images/fo.jpg") ;
+    background-image: url("../assets/images/z.jpg") ;
     padding-right: 50px;
-
+   
   }
 #colophon{
 
@@ -28,4 +28,20 @@ div.image{
   height: 700px;
 
 
+}
+
+.widget ul li a {
+
+  font-family:'Courier New', Courier, monospace;
+  color:black;
+
+
+}
+
+.widget ul li a:visited{ color: brown;}
+.widget ul li a:active{ color: red;}
+
+.widget ul li a:hover{
+  border-radius: 10%;
+  color:blue;
 }
