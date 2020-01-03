@@ -36,7 +36,7 @@ get_header();
 	</div>
     <div class="col-sm-4">
     <?php get_sidebar(); ?>
-	
+	<!-- <div class="image"></div> -->
 	</div>
   </div>
 </div>

@@ -20,7 +20,10 @@
 
 	<?php wp_head(); ?>
 </head>
-
+<!-- <button type="button">Dark Mode</button>
+<script type="text/javascript">
+var color = ["#222f3e"]
+document.querySelector("button").addEventListener("click",function()){document.querySelector("body").style.background = color}) -->
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nahomtheme' ); ?></a>
@@ -65,7 +68,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-<!-- <div> <img src="C:\xampp\htdocs\wordpress\wp-content\themes\nahomtheme\assets\images\fo.jpg"> </div> -->
+
 
 	</header><!-- #masthead -->
 

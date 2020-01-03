@@ -34,8 +34,8 @@
 	</div><!-- #content -->
 </div>
 	<footer id="colophon" class="site-footer white" >
-    <p><h3 style="color:white;">powered By nahomtheme</h3></p>
-    <br ><h6 style="color:white;">©2019 nahomtheme </h6></br>
+    <p><h3 style="color:white;">powered by nahomtheme</h3></p>
+    <br ><h6 style="color:white;">Copy Right ©2020 nahomtheme </h6></br>
 		<!-- <div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nahomtheme' ) ); ?>">
 				<?php
