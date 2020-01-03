@@ -11,7 +11,7 @@
 
 ?>
 
-<nav id="site-navigationf"  class="navbar navbar-expand-md navbar-dark top bg-dark">
+<!-- <nav id="site-navigationf"  class="navbar navbar-expand-md navbar-dark top bg-dark">
     <a class="navbar-brand" href="#">
         <?php bloginfo('name'); ?>
     </a>
@@ -31,9 +31,41 @@
             ]);
         ?>
 
-	</div><!-- #content -->
+	</div> -->
+    
+    <!-- #content -->
 </div>
 	<footer id="colophon" class="site-footer white" >
+    <div id="footer-sidebar" class="row secondary">
+        <div class="col-md-3" id="footer-sidebar1">
+        <?php
+        if(is_active_sidebar('footer-sidebar-1')){
+        dynamic_sidebar('footer-sidebar-1');
+        }
+        ?>
+        </div>
+        <div class="col-md-3" id="footer-sidebar2">
+        <?php
+        if(is_active_sidebar('footer-sidebar-2')){
+        dynamic_sidebar('footer-sidebar-2');
+        }
+        ?>
+        </div>
+        <div class="col-md-3" id="footer-sidebar3">
+        <?php
+        if(is_active_sidebar('footer-sidebar-3')){
+        dynamic_sidebar('footer-sidebar-3');
+        }
+        ?>
+        </div>
+        <div class="col-md-3" id="footer-sidebar4">
+        <?php
+        if(is_active_sidebar('footer-sidebar-4')){
+        dynamic_sidebar('footer-sidebar-4');
+        }
+        ?>
+        </div>
+      </div>
     <p><h3 style="color:white;">powered by nahomtheme</h3></p>
     <br ><h6 style="color:white;">Copy Right ©2020 nahomtheme </h6></br>
 		<!-- <div class="site-info">
