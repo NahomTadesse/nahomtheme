@@ -26,6 +26,7 @@ var color = ["#222f3e"]
 document.querySelector("button").addEventListener("click",function()){document.querySelector("body").style.background = color}) -->
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nahomtheme' ); ?></a>
 	<nav id="site-navigation"  class="navbar navbar-expand-md navbar-dark top bg-dark">
     <a class="navbar-brand" href="#">
@@ -45,7 +46,13 @@ document.querySelector("button").addEventListener("click",function()){document.q
             'fallback_cb'     => 'functions::fallback',
             'walker'          => new nahom_NavBar()
             ]);
-        ?>
+		?>
+		 <div class="s">
+			<?php get_search_form(); ?>
+        </div>
+		
+			
+        
 		</nav><!-- #site-navigation -->
 </div>
 	<header id="masthead" class="site-header">
