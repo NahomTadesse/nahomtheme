@@ -65,6 +65,13 @@
         }
         ?>
         </div>
+        <div class="col-md-3" id="footer-sidebar-5">
+        <?php
+        if(is_active_sidebar('footer-sidebar-5')){
+        dynamic_sidebar('footer-sidebar-5');
+        }
+        ?>
+        </div>
       </div>
     <p><h3 style="color:white;">powered by nahomtheme</h3></p>
     <br ><h6 style="color:white;">Copy Right ©2020 nahomtheme </h6></br>
