@@ -56,3 +56,19 @@ text-align: center;
   
 
 }
+.footer-widget-title{
+  text-decoration: underline;
+}
+
+.footer-widget ul li a:visited{ color: brown;}
+.footer-widget ul li a:active{ color: red;}
+.footer-widget ul li a{
+  font-family:'Courier New', Courier, monospace;
+  color:black;
+
+}
+.footer-widget ul li {
+  list-style-type: none; 
+  text-align: center;
+
+}
