@@ -104,13 +104,14 @@ add_action( 'after_setup_theme', 'nahomtheme_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function nahomtheme_widgets_init() {
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'nahomtheme' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'nahomtheme' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
+		'before_title'  => '<div class="cards"><h2 class="widget-title">',
 		'after_title'   => '</h2>',
     ) );
     register_sidebar( array(
@@ -151,8 +152,8 @@ function nahomtheme_widgets_init() {
         'after_title' => '</h3>',
             ) );
     register_sidebar( array(
-        'name' => 'Footer Sidebar 4',
-        'id' => 'footer-sidebar-4',
+        'name' => 'Footer Sidebar 5',
+        'id' => 'footer-sidebar-5',
         'description' => 'Appears in the footer area',
         'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
         'after_widget' => '</aside>',
