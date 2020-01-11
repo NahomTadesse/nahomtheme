@@ -46,6 +46,7 @@ document.querySelector("button").addEventListener("click",function()){document.q
             'fallback_cb'     => 'functions::fallback',
             'walker'          => new nahom_NavBar()
             ]);
+            
 		?>
 		 <div class="s">
 			<?php get_search_form(); ?>
