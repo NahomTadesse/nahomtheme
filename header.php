@@ -28,7 +28,7 @@ document.querySelector("button").addEventListener("click",function()){document.q
 <div id="page" class="site">
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nahomtheme' ); ?></a>
-	<nav id="site-navigation"  class="navbar navbar-expand-md navbar-dark top bg-dark">
+	<nav id="site-navigation"  class="navbar navbar-expand-md  ">
     <a class="navbar-brand" href="#">
         <?php bloginfo('name'); ?>
     </a>

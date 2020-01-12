@@ -73,7 +73,7 @@
         ?>
         </div>
       </div>
-    <p><h3 <div id="p">Proudly powered by nahomtheme</div></h3></p>
+    <p><h4 <div id="p">Proudly powered by nahomtheme</div></h4></p>
     <br ><h6 style="color:white;">Copy Right ©2020 nahomtheme </h6></br>
 		<!-- <div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nahomtheme' ) ); ?>">

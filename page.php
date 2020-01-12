@@ -19,11 +19,13 @@ get_header();
     <div class="col-sm-8">
 
 	<div id="primary" class="content-area">
+	
 		<main id="main" class="site-main">
-		<div class="image"></div>	
+			
 		<?php
  
 		while ( have_posts() ) :
+			
 			the_post();
 
 			get_template_part( 'template-parts/content', 'page' );
