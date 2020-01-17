@@ -47,11 +47,11 @@ text-align: center;
   text-decoration: underline;
 }
 
-.footer-widget ul li a:visited{ color: brown;}
-.footer-widget ul li a:active{ color: red;}
+.footer-widget ul li a:visited{ color:#ff6567 ;}
+.footer-widget ul li a:active{ color: #ff6567;}
+.footer-widget ul li a:hover{ color:  #01b1e6 ;}
 .footer-widget ul li a{
   font-family:'Courier New', Courier, monospace;
-  color:black;
 
 }
 .footer-widget ul li {
@@ -75,7 +75,7 @@ text-align: center;
 }
 .footer-widget-title{
 text-align: center;
-color: #86c232;
+color:#01b1e6;
 }
 #p{
 color: #65ccb8;
@@ -94,3 +94,26 @@ color: #65ccb8;
 }
 .entry-title :visited{color:#0c0032; }
 .entry-title :active{color:#0c0032; }
+
+.footer-widget #wp-calendar{
+  
+  color:#ff6567; 
+}
+
+.main-navigation ul ul {
+  background: #2196F3;
+ 
+}
+#site-navigation ul li a {
+
+  color: aliceblue;
+}
+#site-navigation ul li a:hover{color:  #01b1e6;}
+
+#site-navigation ul li div{
+  background-color:#0c0032;
+}
+
+#site-navigation ul li div a:hover{
+  background-color: #0c0032;
+}
