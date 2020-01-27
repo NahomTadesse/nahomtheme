@@ -46,10 +46,10 @@ text-align: center;
 .footer-widget-title{
   text-decoration: underline;
 }
-
+.footer-widget ul li a {color:#ff6567;}
 .footer-widget ul li a:visited{ color:#ff6567 ;}
 .footer-widget ul li a:active{ color: #ff6567;}
-.footer-widget ul li a:hover{ color:  #01b1e6 ;}
+.footer-widget ul li a:hover{ color:  #01b1e6 ; text-decoration: underline;}
 .footer-widget ul li a{
   font-family:'Courier New', Courier, monospace;
 
@@ -117,3 +117,4 @@ color: #65ccb8;
 #site-navigation ul li div a:hover{
   background-color: #0c0032;
 }
+

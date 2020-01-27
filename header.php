@@ -20,12 +20,18 @@
 
 	<?php wp_head(); ?>
 </head>
-<!-- <button type="button">Dark Mode</button>
-<script type="text/javascript">
-var color = ["#222f3e"]
-document.querySelector("button").addEventListener("click",function()){document.querySelector("body").style.background = color}) -->
+
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+</div>
+	<header id="masthead" class="site-header">
+		<div class="site-branding">
+			 <?php
+			the_custom_logo();
+			?>
+		</div><!-- .site-branding -->
+
+	</header><!-- #masthead -->
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nahomtheme' ); ?></a>
 	<nav id="site-navigation"  class="navbar navbar-expand-md  ">
@@ -55,14 +61,6 @@ document.querySelector("button").addEventListener("click",function()){document.q
 			
         
 		</nav><!-- #site-navigation -->
-</div>
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			 <?php
-			the_custom_logo();
-			?>
-		</div><!-- .site-branding -->
 
-	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

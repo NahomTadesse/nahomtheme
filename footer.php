@@ -11,28 +11,6 @@
 
 ?>
 
-<!-- <nav id="site-navigationf"  class="navbar navbar-expand-md navbar-dark top bg-dark">
-    <a class="navbar-brand" href="#">
-        <?php bloginfo('name'); ?>
-    </a>
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'footer menu', 'nahomtheme' ); ?></button
-        <?php
-            wp_nav_menu([
-            'menu'            => 'footer menu',
-            'theme_location'  => 'menu-1',
-            'container'       => 'div',
-            'container_id'    => 'navbarCollapse',
-            'container_class' => 'collapse navbar-collapse',
-            'menu_id'         => false,
-            'menu_class'      => 'navbar-nav mr-auto',
-            'depth'           => 0,
-            'fallback_cb'     => 'functions::fallback',
-            'walker'          => new nahom_NavBarFooter()
-            ]);
-        ?>
-
-	</div> -->
-    
     <!-- #content -->
 </div>
 	<footer id="colophon" class="site-footer white" >
