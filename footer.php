@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package nahomtheme
+ * @package nahi
  */
 
 ?>
@@ -51,19 +51,19 @@
         ?>
         </div>
       </div>
-    <p><h4 <div id="p">Proudly powered by nahomtheme</div></h4></p>
-    <br ><h6 style="color:white;">Copy Right ©2020 nahomtheme </h6></br>
+    <p><h4 <div id="p">Proudly powered by nahi</div></h4></p>
+    <br ><h6 style="color:white;">Copy Right 2020 nahi </h6></br>
 		<!-- <div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nahomtheme' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nahi' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'nahomtheme' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'nahi' ), 'WordPress' );
 				?>
 			</a>
-			<span class="sep"> | </span>
+			
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'nahomtheme' ), 'nahomtheme', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'nahi' ), 'nahi', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?> -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

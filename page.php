@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package nahomtheme
+ * @package nahi
  */
 
 get_header();

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package nahomtheme
+ * @package nahi
  */
 
 ?>
@@ -20,10 +20,7 @@
 
 	<?php wp_head(); ?>
 </head>
-<!-- <button type="button">Dark Mode</button>
-<script type="text/javascript">
-var color = ["#222f3e"]
-document.querySelector("button").addEventListener("click",function()){document.querySelector("body").style.background = color}) -->
+
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 </div>
@@ -36,12 +33,12 @@ document.querySelector("button").addEventListener("click",function()){document.q
 
 	</header><!-- #masthead -->
 
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nahomtheme' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nahi' ); ?></a>
 	<nav id="site-navigation"  class="navbar navbar-expand-md  ">
     <a class="navbar-brand" href="#">
         <?php bloginfo('name'); ?>
     </a>
-    <button class="navbar-toggler navbar-toggler-icon navbar-toggler-right bg-light" type = "button" data-toggle="collapse" data-target="#bs4navbar" aria-controls = "bs4navbar" aria-expanded="false" aria-label="Toggle navigation"><?php esc_html_e( '', 'nahomtheme' ); ?></button>
+    <button class="navbar-toggler navbar-toggler-icon navbar-toggler-right bg-light" type = "button" data-toggle="collapse" data-target="#bs4navbar" aria-controls = "bs4navbar" aria-expanded="false" aria-label="Toggle navigation"><?php esc_html_e( '', 'nahi' ); ?></button>
         <?php
             wp_nav_menu([
             'menu'            => 'primary-menu',

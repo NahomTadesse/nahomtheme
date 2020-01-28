@@ -1,13 +1,13 @@
 <?php
 /**
- * nahomtheme functions and definitions
+ * nahi functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package nahomtheme
+ * @package nahi
  */
 
-if ( ! function_exists( 'nahomtheme_setup' ) ) :
+if ( ! function_exists( 'nahi_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'nahomtheme_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function nahomtheme_setup() {
+	function nahi_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on nahomtheme, use a find and replace
-		 * to change 'nahomtheme' to the name of your theme in all the template files.
+		 * If you're building a theme based on nahi, use a find and replace
+		 * to change 'nahi' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'nahomtheme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'nahi', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'nahomtheme_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'nahomtheme' ),
+			'menu-1' => esc_html__( 'Primary', 'nahi' ),
 		) );
 
 		/*
@@ -60,7 +60,7 @@ if ( ! function_exists( 'nahomtheme_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'nahomtheme_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'nahi_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -81,7 +81,7 @@ if ( ! function_exists( 'nahomtheme_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'nahomtheme_setup' );
+add_action( 'after_setup_theme', 'nahi_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -90,25 +90,25 @@ add_action( 'after_setup_theme', 'nahomtheme_setup' );
  *
  * @global int $content_width
  */
-function nahomtheme_content_width() {
+function nahi_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'nahomtheme_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'nahi_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'nahomtheme_content_width', 0 );
+add_action( 'after_setup_theme', 'nahi_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function nahomtheme_widgets_init() {
+function nahi_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'nahomtheme' ),
+		'name'          => esc_html__( 'Sidebar', 'nahi' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'nahomtheme' ),
+		'description'   => esc_html__( 'Add widgets here.', 'nahi' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<div class="cards"><h2 class="widget-title">',
@@ -162,12 +162,12 @@ function nahomtheme_widgets_init() {
                     ) );
 
 }
-add_action( 'widgets_init', 'nahomtheme_widgets_init' );
+add_action( 'widgets_init', 'nahi_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function nahomtheme_scripts() {
+function nahi_scripts() {
     wp_enqueue_style( 'wpb-google-fonts', '"https://fonts.googleapis.com/css?family=Oxygen&display=swap"', false );
     wp_enqueue_style( "customcss", get_template_directory_uri().'/assets/css/custom.css', array(), '1.0', 'all' );
 
@@ -175,17 +175,17 @@ function nahomtheme_scripts() {
 
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array( 'jquery' ) );
 
-	wp_enqueue_style( 'nahomtheme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'nahi-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'nahomtheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'nahi-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'nahomtheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'nahi-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'nahomtheme_scripts' );
+add_action( 'wp_enqueue_scripts', 'nahi_scripts' );
 
 class nahom_NavBar extends Walker_Nav_Menu
 {
@@ -306,3 +306,7 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+function nahi_add_editor_styles() {
+    add_editor_style( '/assets/css/custom-editor-style.css' );
+}
+add_action( 'admin_init', 'nahi_add_editor_styles' );

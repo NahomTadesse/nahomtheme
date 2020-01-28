@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package nahomtheme
+ * @package nahi
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function nahomtheme_jetpack_setup() {
+function nahi_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'nahomtheme_infinite_scroll_render',
+		'render'    => 'nahi_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function nahomtheme_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'nahomtheme-style',
+			'stylesheet' => 'nahi-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -42,12 +42,12 @@ function nahomtheme_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'nahomtheme_jetpack_setup' );
+add_action( 'after_setup_theme', 'nahi_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function nahomtheme_infinite_scroll_render() {
+function nahi_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
