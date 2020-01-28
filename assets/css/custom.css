@@ -31,18 +31,36 @@ text-align: center;
 
 
 
-.widget ul li a:visited{ color: brown;}
-.widget ul li a:active{ color: red;}
+.widget ul li a:visited{ color:#0c0032;}
+.widget ul li a:active{ color: #0c0032;}
 
 .widget ul li a:hover{
   border-radius: 10%;
-  color:blue;
+ 
+  font-size: 18px;
 }
 .widget .widget-title{
-  text-decoration: underline;
+ 
+  background-color: #0c0032;
+  color: white;
+  animation-duration: 3s;
+  animation-name: slidein;
   
-
 }
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    /* width: 300%;  */
+  }
+
+  to {
+    margin-left: 0%;
+    /* width: 100%; */
+  }
+}
+
 .footer-widget-title{
   text-decoration: underline;
 }
